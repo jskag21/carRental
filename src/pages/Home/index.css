@@ -1,0 +1,298 @@
+.homeWrapper{      
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: -4px;
+}
+.myVideo::before{
+    content:" ";
+    position: absolute;
+    top:0px;
+    width: 100vw;
+    height: 1080px;
+    background-color: rgba(0,0,0,.4);
+}
+.thevideo{
+   
+}
+
+.carrousel{
+    /* height: 80vh;    */
+    background-color: white;
+    /* background-image: url('http://www.shanghaiaozhi.com/static/upload/image/20230609/1686300351973363.jpg'); */
+    /* background-color: rgba(0,0,0,.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position:0px 0px;
+    background-size:cover; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+      
+}
+/* .carrousel::before{
+    content:" ";
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,.3);
+   
+} */
+.carWrap{
+    background-color: rgb(173, 44, 44);
+    height: 60%;
+    width:50%;
+    border-radius: 1rem;
+    /* margin: 10px 0 0 80px ; */
+}
+.imgWrapper{    
+    /* width: 100%;    */    
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;   
+    transition:all 0.6s ease-in-out;
+}
+/*
+the images themselves have a style within the elements no in this css file
+*/
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+ 
+  }
+  
+ @keyframes fade {
+    from {
+     opacity: .6;  
+
+    }
+    to {
+        opacity: 1;  
+           
+    }
+  }
+  @keyframes translate {
+
+    from {
+
+    }
+    to{
+        margin-left: 200%;
+    }
+  }
+
+.imgWrapper img{   
+    transition:all 3s ease;    
+}
+
+.buttons{
+    filter: brightness(1);
+    position: relative;
+    top: 17vw;
+    margin-top: -40px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.buttons button{
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+    border-image: initial;
+}
+.next, .prev{
+  cursor: pointer; 
+  width: auto;
+  height: 45px;
+  padding: 5px  4px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.6s ease;
+
+  background-color:rgba(0,0,0,1);
+  opacity: 0;
+
+}
+.prev{
+  
+}
+.dots{
+   position:relative;
+   top:100%;
+   margin-top: -34px;
+   width: 100%;
+   height: 32px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   opacity: 0;  
+   background-color: rgba(0,0,0,0.8);
+   transition:all 0.6s ease;
+
+   
+}
+.dots :nth-child(1){
+    background-color: hsl(0, 0%, 40%);
+}
+.dots span{
+    transition: all 0.6s ease;
+}
+
+.dot{    
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;  
+    background-color:  #bbb;   
+    border-radius: 50%;
+    display: inline-block;
+  
+   
+}
+.active-dot{
+    background-color: hsl(0, 0%, 40%);
+}
+
+    
+.youshi{
+    /* position: sticky;
+    top:0; */
+    background-color: #f1f1f1;
+    /* height: 85vh; */  
+    text-align: center;
+    padding: 3% 0;
+    z-index: 1;
+}
+.youshiTitle{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap:1.3rem;
+}
+.youshiTitle h1{
+    color: #333;
+    font-size: min(40px,5vw);
+    /* height: 40px; */
+    line-height: 40px;
+    /* padding-bottom: 20px; */
+}
+.youshiTitle p, .pricingTitle p{
+    color: #999;
+    font-size: min(20px,2.5vw);
+    height: 20px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    padding-bottom: 50px;
+}
+.youshiCards{
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+    gap:min(300px,10vw);  
+   
+}
+.youshi-card{
+    height: min(380px,80vw);
+    width:min(260px,50vw);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;   
+    align-items: center;
+    gap:3rem;
+    /* border: 0.1px solid rgba(0,0,0,.1); */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+    
+    /* padding:2% 1%; */
+    border-radius: 3rem;
+    transition: all .3s ease;
+}
+
+.youshi-card:hover{
+    margin-top: -5px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.youshi-card img{
+    width:60px;
+}
+.youshi-card p{
+    color: #222;
+    font-size: min(20px,2.5vw);
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 26px;
+    /* padding-bottom: 50px; */
+}
+.youshi-card div{
+    font-style: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ff3434;
+    
+}
+.youshi-card div img{
+    width: min(2vw,30px);
+}
+.youshi-card div a{
+    color: #6e6e6e;
+}
+.pricing{
+    /* position: sticky;
+    top:0; */
+    /* background-color: #bbb; */
+    background: url('../../assets/images/voitureNoir.jpeg'), linear-gradient(to top, rgba(91, 212, 111, 0.5), rgba(94, 187, 224, 0.5));
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: multiply;
+    /* background-image: url('../../assets/images/back02.jfif'); */
+    /* filter: blur(4px); */
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    text-align: center;
+    padding: 3% 0;  
+    /* height: 100vh; */
+    z-index:3;
+}
+.pricing *{
+  /* color:white; */
+    }
+.pricingTitle h1{
+    color: white;
+    font-size: 40px;
+    transition: all 0.6s ease-in-out;
+}
+
+.pricingTitle{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:30px;
+}
+.pricingCards{
+    /* width: 100vw; */
+    /* border:1px solid red; */
+    flex-grow: 1;
+
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: center;
+    gap:30px;
+   
+    margin: 30px 0;;
+  
+}
+
+/* .pricingTitle p:hover{
+   color: hsl(0, 0%, 80%);
+} */
+

@@ -1,0 +1,110 @@
+
+.pricing-card{
+    height: 380px;
+    width:280px;
+    border:1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding:12px 0;
+    transition: all .1s ease;
+}
+.pricing-card:hover{
+   margin-top: -3px;
+}
+.carWrapper{
+ 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap:10px;  
+   
+}
+
+.carTitle{
+    
+    height:30px;
+    width:90%;       
+    background-color: rgb(10, 168, 84);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:11px;
+
+    font-weight: 300;
+    font-size: 13px;
+    color:white;
+    border:0.3px solid #f1f1f1;
+    border-radius: 3px;
+}
+
+.pricing-card-info{
+    display: flex;
+    flex-flow: column nowrap;    
+    align-items: center;    
+   
+}
+.carDetails{
+    
+    width:90%;   
+    text-align: start;
+    padding:0 10px;
+    margin-top: 15px;
+}
+.carDetails h3{
+   margin-left: -9px;
+   transform: scale(0.9);
+   
+}
+.carDetails p {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:5px;
+    font-size:12.4px;
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+.price {
+   margin-top:40px;
+   display: flex;   
+   gap:10px;
+}
+.price p{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-flow: column nowrap;
+    gap:4px;
+    text-align: start;
+    color:rgb(197, 75, 75);
+}
+.price button{
+    transition: all .2s ease-in-out;
+    background-color: #0aa854;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #fff;
+    padding: 7px 16px;
+    font-size: 14.5px;
+    font-weight: 400;
+}
+.price button:hover{
+    cursor: pointer;
+}
+.thePrice{
+    font-size: 18px;
+    
+}
+
+.assuranceIcon{
+transform: scale(1.1);
+}
+.assuranceIcon:hover{
+    cursor: pointer;
+}
+.assuranceContent{
+    font-size: 1rem;
+    font-weight: 300;
+}

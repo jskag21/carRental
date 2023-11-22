@@ -1,0 +1,84 @@
+/*
+#262626
+*/
+
+.foot{
+    background-color: rgba(0, 0, 0, 1.5);
+    color:white;
+
+    font-family: Thaoma sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    height:60%;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    z-index: 5;
+   
+}
+.footerAbout{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+.footerInfos{
+    display: flex;
+    flex-direction: column;
+}
+.footerInfos span{
+    padding: 10px 0;
+}
+.footerIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:10px;
+    
+}
+.footerIcons i:hover{
+    /* height: 50px; */
+    cursor: pointer;
+
+}
+.certificates{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    opacity: .8;
+   
+}
+.certificatesNames{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap:15px;
+}
+.certificatesNames span{
+    padding:0 15px 0 0;
+}
+.child1,.child2, .child3{
+    border-right: 1px solid white;;
+}
+.certificatesLinks{
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: center; */
+    gap:20px;
+    margin-left: 30px;
+}
+.certificatesLinks span{
+    padding:0 15px 0 0;
+}
+.certificatesLinks .child1{
+   
+}
+
+

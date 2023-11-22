@@ -1,0 +1,103 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: #f5f5f5;
+    padding: 22px;
+    z-index: 4;
+}
+.ratings{
+    color:#333;
+    font-weight: 600;
+    font-size: 15px;
+    opacity:0.7;
+
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.phoneNumber{
+    line-height: 25px;    
+    background: url('http://www.oibsh.com/images/header_dianhua.png') no-repeat left center;
+    padding-left: 50px;
+    margin: 3px 0 0 30px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #727272;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+.phoneNumber span {
+    display: block;
+    overflow: hidden;
+    font-size: 1.2rem;   
+    color: var(--phoneNumberColor);
+    font-weight: bold;
+    letter-spacing:normal;
+}
+
+.myNav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;      
+    font-family: "Proxima Nova",Roboto,Helvetica,Arial,sans-serif;
+    color:rgb(0, 0, 0);
+    /* font-size: 18px;    */   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;     
+    filter:brightness(1);
+    z-index: -1;
+}
+.logo{
+    padding:5px;
+    width:164px;
+    height: 70px;
+}
+.logo img{
+    height: 100%;
+    width:100%;  
+}
+
+.nav-items{
+   
+}
+.title{   
+    font-weight: 600;
+    font-size: 1.1rem; 
+    line-height: 20px;
+    color: #727272;   
+    transition: color .2s ease;    
+}
+
+.titleUnderline{
+    display: block;
+    height: 3px;
+    width:1.8rem;
+    margin: auto;
+    border-radius: 6px;
+    margin-top:6px ;
+    background-color: #727272; 
+}
+.nav-items span:hover{
+   cursor: pointer;
+}
+
+.user-space ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+.user-space ul li{
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+}
+.user-space ul .denglu{
+    border-radius: 50px;
+   
+    background: linear-gradient(265.93deg,rgba(111,156,255,.38) 5.89%,rgba(115,129,255,.4) 53.76%,rgba(105,152,255,.4) 117.44%),linear-gradient(100.67deg,rgba(125,165,255,.95) .67%,#6978ff 64.63%);
+    color:white;
+}

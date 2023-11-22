@@ -1,0 +1,18 @@
+.environment {
+    margin:0 10%;
+    padding:0 60px 60px 60px;
+    background-color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 10;
+    margin-top:1px;
+}
+
+.environment h1, .environment h2 {
+    padding:1rem 0;
+}
+
+.environment p{
+    font-size: 15px;
+    font-weight: 300;
+    margin:26px 0;    
+}

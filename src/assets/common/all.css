@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --videoWidth:100vw;
+    --phoneNumberColor:#ac947e;
+  }
+  /*Footer breakpoint
+  ********************
+  */
+@media (min-width:934px) {
+
+  .youshi,.pricing{
+
+    position: sticky;
+    top:0;
+  }
+
+}
+
+@media (max-width:500px){
+
+  .logo {
+    transform: scale(0.8);
+  }
+  .phoneNumber{
+    transform: scale(0.7);
+  }
+  .title{
+    /* transform: scale(0.1); */
+  }
+ 
+}
+@media(max-width:420px){
+  .phoneNumber{
+    transform: scale(0.4);
+  }
+}
+@media (min-width:1200px) {
+    /* .foot{
+        height:25vh;
+        gap:30px;
+        font-size: 14px;
+    }
+    .footerAbout{
+       display: flex;
+       flex-flow: row nowrap;
+       justify-content: space-between;
+    
+    }
+    .footerInfos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .footerInfos span{
+        padding: 0 25px 0 0;
+    }
+    .footerIcons{
+        display: flex;
+        justify-content: space-between;
+        gap:10px;
+        align-items:center;
+        margin-top:0px;
+        
+    }
+    .certificates{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+     
+       
+    } */
+}
